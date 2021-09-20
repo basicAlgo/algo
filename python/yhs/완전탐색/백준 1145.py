@@ -18,3 +18,21 @@ for i in range(1,1000001):
     else: continue
         
 print(n)
+
+'''
+재귀방식, 통과 못함,  연습해본 용도  
+
+l = list(map(int, input().split()))
+def sol(n):
+    count = 0
+    for i in l:
+        if n % i == 0:
+            count += 1
+    if count >= 3:
+        print(n)
+    else : 
+        n += 1
+        sol(n)
+
+sol(min(l))
+'''
